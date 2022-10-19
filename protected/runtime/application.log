@@ -1,0 +1,102 @@
+2022/10/19 13:01:32 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/jquery-1.12.4.min.js". in H:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.12....')
+#1 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.12.4.min.js
+HTTP_REFERER=http://auth.net/gii/default/login
+---
+2022/10/19 13:01:36 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/jquery-1.12.4.min.js". in H:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.12....')
+#1 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.12.4.min.js
+HTTP_REFERER=http://auth.net/gii/default/index
+---
+2022/10/19 13:01:39 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/jquery-1.12.4.min.js". in H:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.12....')
+#1 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.12.4.min.js
+HTTP_REFERER=http://auth.net/gii/form/index
+---
+2022/10/19 13:01:41 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/jquery-1.12.4.min.js". in H:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.12....')
+#1 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.12.4.min.js
+HTTP_REFERER=http://auth.net/gii/default/index
+---
+2022/10/19 13:01:43 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/jquery-1.12.4.min.js". in H:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.12....')
+#1 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.12.4.min.js
+HTTP_REFERER=http://auth.net/gii/model/index
+---
+2022/10/19 13:04:17 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/jquery-1.12.4.min.js". in H:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.12....')
+#1 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.12.4.min.js
+HTTP_REFERER=http://auth.net/gii/model/index
+---
+2022/10/19 13:04:18 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "js/jquery-1.12.4.min.js". in H:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('js/jquery-1.12....')
+#1 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/jquery-1.12.4.min.js
+HTTP_REFERER=http://auth.net/gii/model/index
+---
+2022/10/19 13:12:23 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "asmlkas". in H:\OpenServer\domains\framework\web\CWebApplication.php:286
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('asmlkas')
+#1 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/asmlkas
+---
+2022/10/19 14:05:10 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login". in H:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('login')
+#1 H:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('login')
+#2 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('auth/login')
+#3 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/auth/login
+---
+2022/10/19 14:05:27 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login". in H:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('login')
+#1 H:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('login')
+#2 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('auth/login')
+#3 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/auth/login
+---
+2022/10/19 14:05:37 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login". in H:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('login')
+#1 H:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('login')
+#2 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('auth/login')
+#3 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/auth/login
+HTTP_REFERER=http://auth.net/
+---
