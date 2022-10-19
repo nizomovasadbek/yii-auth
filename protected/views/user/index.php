@@ -32,7 +32,7 @@
         </table>
 
         <p>
-            <a href="/user/delete">Delete</a>
+            <?php if (Yii::app()->user->role == 'supervisor') echo '<a href="/user/delete">Delete</a>'; ?>
         </p>
 
     </body>

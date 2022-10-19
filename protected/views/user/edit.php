@@ -6,7 +6,7 @@
     </head>
 
     <body>
-        <h1><?php echo $user->username ?></h1>
+        <h1><?php echo $user->username; ?></h1>
         <div class="form">
 
             <?php echo CHtml::beginForm(); ?>
@@ -14,23 +14,25 @@
 
             <div class="row">
                 <?php echo CHtml::activeLabel($model, 'E-Mail'); ?>
-                <?php echo CHtml::activeTextField($model, 'email'); ?>
+                <?php echo CHtml::activeTextField($model, 'email', array('value' => $user->email)); ?>
             </div>
-            
+
             <div class="row">
                 <?php echo CHtml::activeLabel($model, 'Role'); ?>
-                <?php echo CHtml::activeDropDownList($model, 'role', [
-                    '1' => 'user',
-                    '2' => 'admin'
-                ]); ?>
+                <?php
+                echo CHtml::activeDropDownList($model, 'role', [
+                    'user' => 'user',
+                    'admin' => 'admin'
+                ]);
+                ?>
             </div>
 
             <div class="row submit">
-                <?php echo CHtml::submitButton('Update'); ?>
+            <?php echo CHtml::submitButton('Update'); ?>
             </div>
-            
-            <?php echo CHtml::endForm(); ?>
-            
+
+<?php echo CHtml::endForm(); ?>
+
         </div>
 
     </body>

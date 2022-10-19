@@ -25,5 +25,16 @@ return array(
         ),
         'bizRule' => null,
         'data' => null
+    ),
+    'supervisor' => array(
+        'type' => CAuthItem::TYPE_ROLE,
+        'description' => 'Supervisor',
+        'children' => array(
+            'admin',
+            'user',
+            'guest'
+        ),
+        'bizRule' => null,
+        'data' => null,
     )
 );
