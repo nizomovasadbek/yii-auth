@@ -9,6 +9,8 @@ return array(
 		'application.components.*',
 	),
 
+        'timeZone' => 'Asia/Tashkent',
+    
 	'modules'=>array(
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
@@ -25,6 +27,7 @@ return array(
                 ),
             
 		'user'=>array(
+                        'loginUrl' => 'auth/login',
 			'allowAutoLogin'=>true,
                         'class' => 'WebUser'
 		),

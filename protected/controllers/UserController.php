@@ -4,9 +4,7 @@ class UserController extends Controller {
 
     public function actionIndex() {
         $users = User::model()->findAll();
-        echo '<pre>';
-        print_r($users);
-        echo '</pre>';
+        $this->render('index', ['users' => $users]);
         Yii::app()->end();
     }
 
