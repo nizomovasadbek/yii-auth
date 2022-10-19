@@ -100,3 +100,25 @@ Stack trace:
 REQUEST_URI=/auth/login
 HTTP_REFERER=http://auth.net/
 ---
+2022/10/19 14:32:48 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "logout". in H:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('logout')
+#1 H:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('logout')
+#2 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('auth/logout')
+#3 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/auth/logout
+HTTP_REFERER=http://auth.net/
+---
+2022/10/19 14:37:03 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "login". in H:\OpenServer\domains\framework\web\CController.php:483
+Stack trace:
+#0 H:\OpenServer\domains\framework\web\CController.php(270): CController->missingAction('login')
+#1 H:\OpenServer\domains\framework\web\CWebApplication.php(282): CController->run('login')
+#2 H:\OpenServer\domains\framework\web\CWebApplication.php(141): CWebApplication->runController('auth/login')
+#3 H:\OpenServer\domains\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 H:\OpenServer\domains\auth.net\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/auth/login
+HTTP_REFERER=http://auth.net/
+---

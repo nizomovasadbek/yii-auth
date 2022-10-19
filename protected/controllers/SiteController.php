@@ -13,7 +13,8 @@ class SiteController extends Controller {
             Yii::app()->end();
         }
         $user = User::model()->findByPk(Yii::app()->user->id);
-        $this->render('index', ['username' => $username]);
+        Yii::app()->user->changeLastActivity();
+        $this->render('index', ['username' => $user->username]);
         Yii::app()->end();
     }
 
