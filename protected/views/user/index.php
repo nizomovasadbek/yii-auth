@@ -14,6 +14,7 @@
 
         <table style="width:70%">
             <tr>
+                <td>ID</td>
                 <td>Username</td>
                 <td>E-mail</td>
                 <td>Role</td>
@@ -21,6 +22,7 @@
             <?php
             foreach ($users as $user) {
                 echo '<tr>';
+                echo '<td><a href="/user/edit/' . $user->id . '">' . $user->id . '</a></td>';
                 echo '<td>' . $user->username . '</td>';
                 echo '<td>' . $user->email . '</td>';
                 echo '<td>' . $user->role . '</td>';
@@ -28,9 +30,8 @@
             }
             ?>
         </table>
-        
+
         <p>
-            <a href="/user/edit">Edit</a><br>
             <a href="/user/delete">Delete</a>
         </p>
 
