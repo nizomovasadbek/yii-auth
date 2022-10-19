@@ -28,6 +28,11 @@
             }
             ?>
         </table>
+        
+        <p>
+            <a href="/user/edit">Edit</a><br>
+            <a href="/user/delete">Delete</a>
+        </p>
 
     </body>
 
