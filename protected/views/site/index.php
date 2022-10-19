@@ -8,7 +8,10 @@
         Hello <?php echo $username; ?><br>
         <a href="/auth/logout">
             Logout
-        </a>
+        </a><br>
+        <?php if(Yii::app()->user->role == 'admin'){
+            echo '<a href="/user">Users</a>';
+        } ?>
     </body>
     
 </html>

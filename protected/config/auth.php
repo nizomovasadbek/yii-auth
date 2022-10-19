@@ -1,14 +1,12 @@
 <?php
 
 return array(
-    
     'guest' => array(
         'type' => CAuthItem::TYPE_ROLE,
         'description' => 'Guest',
         'bizRule' => null,
         'data' => null
     ),
-    
     'user' => array(
         'type' => CAuthItem::TYPE_ROLE,
         'description' => 'User',
@@ -18,7 +16,6 @@ return array(
         'bizRule' => null,
         'data' => null
     ),
-    
     'admin' => array(
         'type' => CAuthItem::TYPE_ROLE,
         'description' => 'Admin',
@@ -29,5 +26,4 @@ return array(
         'bizRule' => null,
         'data' => null
     )
-    
 );
