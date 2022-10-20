@@ -1,1 +1,1 @@
-#YII Authentification sample
+# YII Authentification sample
