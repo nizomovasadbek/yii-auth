@@ -24,8 +24,16 @@ class UserController extends Controller {
         );
     }
 
-    public function actionDelete() {
-        echo 'We are working on it';
+    public function actionDelete($id) {
+        $user = User::model()->findByPk($id);
+        if (Yii::app()->user->id == $id) {
+            echo 'You can\'t delete yourself';
+            Yii::app()->end();
+        }
+
+        Yii::app()->user->changeLastActivity();
+        $user->delete();
+        $this->redirect('/user');
         Yii::app()->end();
     }
 
