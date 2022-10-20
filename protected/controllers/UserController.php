@@ -3,24 +3,24 @@
 class UserController extends Controller {
 
     public function filters() {
-        return array(
-            'accessControl'
-        );
+        return array('accessControl');
     }
 
     public function accessRules() {
         return array(
             array('allow',
-                'actions' => array('edit', 'delete'),
-                'roles' => array('supervisor')
+                'actions' => ['delete'],
+                'roles' => ['supervisor']
             ),
-            array('allow',
-                'actions' => array('index'),
-                'roles' => array('admin')
-            ),
-            array('deny',
-                'users' => array('*')
-            )
+                [
+                'allow',
+                'actions' => ['index', 'edit'],
+                'roles' => ['admin']
+            ],
+                [
+                'deny',
+                'users' => ['*']
+            ]
         );
     }
 
