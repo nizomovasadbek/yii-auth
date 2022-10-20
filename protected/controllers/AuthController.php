@@ -34,7 +34,7 @@ class AuthController extends Controller {
                 $user->last_activity = date('Y-m-d H:i:s');
                 $user->role = 'user';
                 if ($model->rememberMe) {
-                    $duration = 3600 * 2;
+                    $duration = 3600 * 4;
                 }
                 if ($user->save()) {
                     $this->iden = new UserIdentity($user->username, $user->password);
@@ -60,7 +60,7 @@ class AuthController extends Controller {
             if ($model->validate()) {
                 $this->iden = new UserIdentity($model->username, md5($model->password));
                 if ($model->rememberMe)
-                    $duration = 3600 * 2;
+                    $duration = 3600 * 4;
                 if ($this->iden->authenticate()) {
                     Yii::app()->user->login($this->iden, $duration);
                     Yii::app()->user->changeLastActivity();
